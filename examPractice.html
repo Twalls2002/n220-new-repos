@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content
+</head>
+<body>
+    <input id="str" type="text"/>
+    <button onclick="getStr()">Click Me</button>
+    <p id="strText"></p>
+    <script>
+        function getStr() {
+            let inputStr = document.getELementById('str').value;
+            let rNum = Math.floor(Math.random()*inputStr.length)+1;
+            let strHalf = inputStr.length/2;
+            let sCharacter = inputStr.charAt(rNum);
+
+            if(rNum>strHalf) {
+                document.getElementById('strText').innerHTML = "This letter is in the second half of your string: " + sCharacter;} 
+                else if (rNum==strHalf){
+                document.getElementById('strText').innerHTML = "This letter is in the middle of your string: " + sCharacter;  
+                }
+             else{
+                document.getElementById('strText').innerHTML = "This letter is in the first half of your string: " + sCharacter;  
+            }
+        }
+    
+    </script>
+</body>

@@ -70,4 +70,5 @@ for (let a=0; a<altBands.length; a++) {
  function deleteItem(){
     let lastItem = gList.getlastElementChild;
     gList.removeChild(lastItem);
+    
  }

@@ -12,6 +12,8 @@ document.getElementById('string').addEventListener('input', function () {
         document.getElementById('stringAns').innerHTML = 'Invalid';
         document.getElementById('stringAns').style.color = 'red';
     }
+
+    console.log("test");
 });
 
 //Event listener for the "Zip Code" input field
